@@ -1,0 +1,11 @@
+﻿### 仓库说明
+1. 本仓库是2020级《Web前端开发课程》课堂代码
+2. 代码供大家参考学习
+### 开发软件
+1. HBuilderX
+2. Chrome
+### 使用说明
+1. 每个学时为一个day，本课程共计40学时(36学时讲解+4学时自学)
+2. 案例教程：https://www.kancloud.cn/pzhlan/webfontcase/2651298
+2. 超星课程：https://mooc1.chaoxing.com/course/222729413.html
+2. 实验课程：https://mooc1.chaoxing.com/course/221774475.html
