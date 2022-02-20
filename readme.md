@@ -6,6 +6,6 @@
 2. Chrome
 ### 使用说明
 1. 每个学时为一个day，本课程共计40学时(36学时讲解+4学时自学)
-2. 案例教程：https://www.kancloud.cn/pzhlan/webfontcase/2651296
+2. 案例教程：http://docs.pzhuweb.cn
 2. 超星课程：https://mooc1.chaoxing.com/course/222729413.html
 2. 实验课程：https://mooc1.chaoxing.com/course/221774475.html
