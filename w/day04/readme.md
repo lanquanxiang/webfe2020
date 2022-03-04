@@ -37,9 +37,29 @@
 		5. button 普通按钮
 			1. value 按钮上的文字
 			2. 没有任何代码/响应，空白按钮
+			3. 补充 ```<button>按钮上的文字</button>```
 		6. submit 提交按钮
 			1. 将表单数据进行提交（发送信息给服务器）
 		7. reset 
 			1. 将表单数据清空
 		8. image = submit
 			1. src="图像地址"
+		9. 文件域
+		10. hidden【掌握】
+			1. 传递默认值
+			2. 传递被禁用的值 + disabled
+2. textarea
+	```
+		<textarea>默认值</textarea>
+	```
+3. select
+	1. 选项option
+	2. size
+	3. selected
+## 补充的属性
+1. disabled属性
+	1. 变成灰色
+	2. 用户不允许修改，服务器不能读取（如果这个值需要，就用hidden复制一遍）
+2. readonly属性
+	1. 不改变样式
+	2. 用户不能修改，服务器可以读取
