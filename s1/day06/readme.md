@@ -1,5 +1,5 @@
 # 选择器【重点】
-## 常用选择器（4种）
+## 常用选择器（4种）【重点】
 1. 类型（标签）选择器 E{}
 2. id选择器 #id{}
 	> 给标签附加id，然后使用#id来声明样式
@@ -12,7 +12,7 @@
 4. 通用选择器 *
 	> 选中所有
 	> 清除网页默认样式
-## 组合选择器（6种）
+## 组合选择器（6种）【重点】
 1. 组合派生选择器 E.class   eg. div.test2
 	> 既要选中E，同时E标签还存在class
 2. 后代选择器 E F eg. div .test2
@@ -31,32 +31,32 @@
 ## 属性选择器（7种）
 1. E[attr]  eg. .con>div>li>a[href]
 	> 具备attr这种属性的E
-2. E[attr="value"]
+2. E[attr="value"]【重点】
 3. E[attr|="value"]
 	>eg. input[type="text-password-radio"]
 4. E[attr~="value"]
 	>eg. input[type="text password radio"]
-5. E[attr^="value"]
+5. E[attr^="value"]【重点】
 	> 这个值以value开头
-6. E[attr$="value"]
+6. E[attr$="value"]【重点】
 	> 这个值以value结尾
-7. E[attr*="value"]
+7. E[attr*="value"]【重点】
 	> 这个值包含value
 ## 链接伪类选择器（4种）
 > 爱恨原则 love hate
 1. link
 2. visited
-3. hover
+3. hover【重点】
 4. active
 ## 伪元素选择器(6种)
 1. ::first-letter
 2. ::first-line
-3. ::before
+3. ::before【重点】
 4. ::after【重点】
 5. ::selection
 6. ::placeholder
 ## 操作伪类选择器(7种)
-1. :focus获得焦点
+1. :focus获得焦点【重点】
 2. :not
 3. :empty
 4. :disabled
@@ -66,11 +66,11 @@
 ## 结构伪类选择器(10种)
 1. :first-child
 2. :last-child
-3. :nth-child(n)
+3. :nth-child(n)【重点】
 4. :nth-last-child(n)
 5. :only-child
-6.  E:first-of-type
-7.  E:last-of-type
-8. E:only-of-type
-9. E:nth-of-type(n)
-10. E:nth-last-of-type(n)
+6. :first-of-type
+7. :last-of-type
+8. :only-of-type
+9. :nth-of-type(n)
+10. :nth-last-of-type(n)
