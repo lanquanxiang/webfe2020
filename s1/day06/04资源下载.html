@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			a::after{
+				content: "[点击链接下载]";
+			}
+			a[href$="doc"]::before{
+				content: url(img/WORD.png);
+			}
+			a[href$="pdf"]::before{
+				content:url(img/pdf.png);
+			}
+		</style>
+	</head>
+	<body>
+		<div><a href="1.doc">文件名字</a></div>
+		<div><a href="2.pdf">文件名字</a></div>
+		<div><a href="3.pdf">文件名字</a></div>
+		<div><a href="4.doc">文件名字</a></div>
+		<div><a href="5.doc">文件名字</a></div>
+	</body>
+</html>
