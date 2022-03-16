@@ -73,3 +73,12 @@
 4. ::before
 5. ::selection （被选中的文本）
 6. ::placeholder （提示文本）
+## 状态伪类选择器(7种)
+1. :focus 获得焦点
+2. :not(selector) 否定
+3. :is(selector) 
+4. :checked
+5. :disabled
+6. :read-only
+7. :empty 元素没有任何内容
+## 结构伪类选择器(10种)

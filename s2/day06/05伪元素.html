@@ -4,12 +4,37 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style type="text/css">
-			div{
+			div::first-letter{
 				text-transform: capitalize;
+				color: red;
+				font-size: 32px;
+			}
+			div::first-line{
+				color: blue;
+				/*content:"内容";*/
+			}
+			a::after{
+				content: "-百度文库";
+			
+			}
+			a[href$="doc"]::before{
+				content: url(img/Word.png);
+			}
+			a[href$="pdf"]::before{
+				content: url(img/pdf.png);
 			}
 		</style>
 	</head>
 	<body>
-		<div>my name is zhangsan.</div>
+		<div>my name is zhangsan.my name is zhangsan.my name is zhangsan.my name is zhangsan.my name is zhangsan.</div>
+		
+		<ul>
+			<li><a href="1.doc">资源1</a></li>
+			<li><a href="2.pdf">资源2</a></li>
+			<li><a href="3.doc">资源3</a></li>
+			<li><a href="4.pdf">资源4</a></li>
+			<li><a href="5.doc">资源5</a></li>
+		</ul>
+	
 	</body>
 </html>
