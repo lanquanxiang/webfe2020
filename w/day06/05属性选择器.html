@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			a::after{
+				content: "-百度文库";
+			}
+			a[href$="doc"]::before{
+				content: url(img/Word.png);
+			}
+			a[href$="pdf"]::before{
+				content: url(img/pdf.png);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div><a href="www.baidu.com/filename.doc">文件名</a></div>
+		<div><a href="www.baidu.com/filename.pdf">文件名</a></div>
+		<div><a href="www.baidu.com/filename.doc">文件名</a></div>
+		<div><a href="www.baidu.com/filename.pdf">文件名</a></div>
+		<div><a href="www.baidu.com/filename.doc">文件名</a></div>
+	</body>
+</html>
