@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*
+			ol>li{
+				color: red;
+			}
+			*/
+		   /*
+		   .panda li{
+			   color: red;
+		   }
+		   */
+		  /*
+		  .panda+li li{
+			  color: red;
+		  }
+		  */
+		 /*
+		 .panda+li~li{
+			 color: red;
+		 }
+		 */
+		.panda,.panda+li+li+li{
+			color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="panda">panda
+				<ol>
+					<li>1111</li>
+					<li>2222</li>
+					<li>3333</li>
+					<li>4444</li>
+				</ol>
+			</li>
+			<li>清华
+				<ol>
+					<li>1111</li>
+					<li>2222</li>
+					<li>3333</li>
+					<li>4444</li>
+				</ol>
+			</li>
+			<li>
+				北大
+			</li>
+			<li>
+				南开
+			</li>
+		</ul>
+		<!-- .con div -->
+		<span class="con">
+			<div></div>
+		</span>
+	</body>
+</html>
