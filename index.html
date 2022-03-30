@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			a{
+				display: block;
+				width: 25px;
+				height: 40px;
+			}
+			.con{
+				width: 50%;
+				position: fixed;
+				right: 10%;
+				bottom: 10%;
+			}
+			.logo img{
+				width: 25px;
+			}
+			.note,.hidden{
+				display: none;
+			}
+			.con>a:hover .static{
+				display: none;
+			}
+			.con>a:hover .hidden{
+				display: inline-block;
+			}
+			.con>a:hover .note{
+				display: inline-block;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="con">
+			<a href="" style="position: relative;left: 100%;">
+				<div>
+					<div class="note" style="left: -100px;width: 100px;text-align: right;">
+						<img width="100px" src="img/erweima.png" />
+					</div>
+					<div style="">
+						<span class="logo static"><img src="img/1.png" ></span>
+						<span class="logo hidden"><img src="img/2.png" ></span>
+					</div>
+				</div>
+			</a>
+			<a href="" style="position: relative;left: 100%;">
+				<div>
+					<div class="note" style="left: -100px;width: 100px;text-align: right;">
+						个人中心
+					</div>
+					<div style="">
+						<span class="logo static"><img src="img/1.png" ></span>
+						<span class="logo hidden"><img src="img/2.png" ></span>
+					</div>
+				</div>
+			</a>
+			<a href="" style="position: relative;left: 100%;">
+				<div>
+					<div class="note" style="left: -100px;width: 100px;text-align: right;">
+						联系客服
+					</div>
+					<div style="">
+						<span class="logo static"><img src="img/1.png" ></span>
+						<span class="logo hidden"><img src="img/2.png" ></span>
+					</div>
+				</div>
+			</a>
+			<a href="" style="position: relative;left: 100%;">
+				<div>
+					<div class="note" style="left: -100px;width: 100px;text-align: right;">
+						购物车
+					</div>
+					<div style="">
+						<span class="logo static"><img src="img/1.png" ></span>
+						<span class="logo hidden"><img src="img/2.png" ></span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</body>
+</html>
