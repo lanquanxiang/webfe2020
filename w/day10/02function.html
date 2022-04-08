@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function fun1(i){
+				console.log(i);
+			}
+			var fun2 = function(i){
+				console.log(i);
+			}
+			
+		</script>
+	</head>
+	<body>
+		<button type="button" onclick="fun1()">按钮</button>
+		<a href="javascript:fun2()">调用函数</a>
+		<script type="text/javascript">
+			var c = fun1(1);
+			console.log(c);
+		</script>
+	</body>
+</html>
