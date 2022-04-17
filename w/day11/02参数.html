@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function getPrams(url){
+				var index=url.indexOf("?");
+				var s=url.substring(index+1);
+				console.log(s)
+				var prams=s.split("&");
+				console.log(prams)
+				var object={};
+				for (var i = 0; i < prams.length; i++) {
+					var v=prams[i].split("=");
+					object[v[0]]=v[1];
+				}
+				return object;
+			}
+			var url="https://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&dyTabStr=MCw2LDQsMywyLDEsNSw3LDgsOQ%3D%3D&word=pzhu"
+			var object=getPrams(url);
+			console.log(object)
+		</script>
+	</body>
+</html>

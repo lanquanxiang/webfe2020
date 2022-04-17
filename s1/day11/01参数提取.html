@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function fun(url){
+				var obj={};
+				var index=url.indexOf('?')+1;
+				var s=url.substring(index);
+				var array = s.split('&');
+				for(var i =0;i<array.length;i++){
+					var param = array[i].split('=');
+					obj[param[0]]=param[1];
+				}
+				return obj;
+			}
+			var url='https://www.baidu.com/baidu?word=pzhu&ie=utf-8&tn=64025008_adr';
+			console.log(fun(url));
+		</script>
+	</body>
+</html>

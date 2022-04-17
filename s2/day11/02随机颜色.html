@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function getColor(){
+				var r=Math.random()*256;
+				r=Math.floor(r);
+				var g=Math.random()*256;
+				g=Math.floor(g);
+				var b=Math.random()*256;
+				b=Math.floor(b);
+				var s = "rgb("+r+","+g+","+b+")";
+				console.log(s);
+				return s;
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.body.bgColor=getColor();
+			
+		</script>
+	</body>
+</html>
