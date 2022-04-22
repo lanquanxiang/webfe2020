@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="f1()">即将跳转</button>
+		<button onclick="f2()">是否跳转</button>
+		<button onclick="f3()">自定义跳转</button>
+	<script type="text/javascript">
+		function f1(){
+			alert("即将跳转到攀枝花学院");
+			window.location.href="http://www.pzhu.edu.cn";
+	
+		}
+		var f2 =function(){
+			var ld = confirm("是否跳转到攀枝花学院？");
+			if(ld == true){
+				window.location.href="http://www.pzhu.edu.cn";
+			}
+		}
+		var f3=function(){
+			var url=prompt("请输入网址","http://www.pzhu.edu.cn");
+			if(confirm("你是否要跳转到"+url)){				
+				window.location.href=url;
+			}
+		}
+	</script>
+	</body>
+</html>

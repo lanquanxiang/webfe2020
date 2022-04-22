@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		请输入数字：<input type="text" onkeypress="fun1()" />
+		<script>
+			function fun1(){
+				if (event.keyCode<48||event.keyCode>57) {
+					alert("只能输入数字!")
+					//1. 返回false阻止默认事件
+					//return false;
+					//2. 阻止默认事件
+					event.preventDefault();
+				}
+			}
+		</script>
+	</body>
+</html>

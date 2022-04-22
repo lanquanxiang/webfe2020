@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="f1()">批量增加文字</button>
+		<div id="wj">
+			
+		</div>
+		<script type="text/javascript">
+			var wj=document.getElementById('wj');
+			function f1(){
+				//1. 创建文档碎片
+				var df = document.createDocumentFragment();
+				//2. 将所有的节点追加到碎片中
+				for (var i = 0; i < 10; i++) {
+					var b=document.createElement('div');
+					b.innerHTML="文本";
+					//将创建的节点追加到碎片中
+					df.appendChild(b);
+				}
+				//3. 将碎片追加到文档中
+				wj.appendChild(df);
+				
+				
+			}
+		</script>
+	</body>
+</html>

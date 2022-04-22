@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<input type="button" onclick="f1()" value="增加文本" />
+		<input type="button" onclick="f2()" value="增加图片" />
+		<input type="button" onclick="f3()" value="删除第一个元素" />
+		<input type="button" onclick="f4()" value="删除最后一个元素" />
+		<div id="con"></div>
+		<script type="text/javascript">
+			var con=document.getElementById("con");
+			function f1(){
+				var ff=document.createElement("div");	
+				ff.innerHTML="文字";
+				con.appendChild(ff);
+			}
+			function f2(){
+				var ad=document.createElement("img");
+				ad.setAttribute("src","img/HBuilder.png");
+				con.appendChild(ad);
+			}
+			var f3=function(){
+				con.firstChild.parentNode.removeChild(con.firstChild);
+			}
+			var f4=function(){
+				con.removeChild(con.lastChild);
+			}
+		</script>
+	</body>
+</html>

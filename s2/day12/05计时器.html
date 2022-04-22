@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		timeOut:
+		<button onclick="fun1()">开始</button>
+		<button onclick="fun2()">暂停</button><br>
+		interVal:
+		<button onclick="fun3()">开始</button>
+		<button onclick="fun4()">暂停</button><br>
+		<div id="con"></div>
+		<script type="text/javascript">
+			var t1, t2;
+			function fun1(){
+				t1=setTimeout(funny,0);
+			}
+			function fun2(){
+				clearTimeout(t1);
+			}
+			var fun3 = function() {
+				t2 = setInterval(fun, 0);
+			}
+			function fun4() {
+				clearInterval(t2);
+			}
+			function fun() {
+				document.getElementById("con").innerHTML += "好"
+			}
+			function funny() {
+				document.getElementById("con").innerHTML += "好"
+				fun1();
+			}
+		</script>
+	</body>
+</html>
