@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button>空白按钮</button>
+		<button onclick="fun1()">添加监听</button>
+		<button>移除监听</button>
+		<script type="text/javascript">
+			function fun(){
+				console.log("空白按钮被点击了!")
+			}
+			
+			function fun1(){
+				console.log("为空白按钮添加了监听.")
+				document.getElementsByTagName("button")[0].addEventListener("click",fun,true);
+			}
+			
+			document.getElementsByTagName("button")[2].onclick=function(){
+				console.log("移除了空白按钮的监听.")
+				document.getElementsByTagName("button")[0].removeEventListener("click",fun,true);
+			}
+		</script>
+	</body>
+</html>

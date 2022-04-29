@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<button>按钮</button>
+		<button>添加监听器</button>
+		<button>移除监听器</button>
+		<script type="text/javascript">
+			document.getElementsByTagName("button")[1].onclick = function(){
+				console.log("按钮2被点击!")
+				//document.getElementsByTagName("button")[0].addEventListener("click",function(){},true);
+				document.getElementsByTagName("button")[0].addEventListener("click",fun,true);
+			}
+			document.getElementsByTagName("button")[2].onclick = function(){
+				console.log("按钮3被点击!")
+				//document.getElementsByTagName("button")[0].addEventListener("click",function(){},true);
+				document.getElementsByTagName("button")[0].removeEventListener("click",fun,true);
+			}
+			var fun = function(){
+				console.log("已经添加了监听!");
+			}
+		</script>
+	</body>
+</html>
