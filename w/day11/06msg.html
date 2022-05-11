@@ -4,10 +4,17 @@
 		<meta charset="utf-8">
 		<title></title>
 		<script type="text/javascript">
+			var mesgs=[];
 			function mmm(){
 				var name=document.getElementById("name").value;
 				var liuyan=document.getElementById("liuyan").value;
-				document.getElementById("msgs").value+=name+liuyan;
+				var str="["+name+"]在"+new Date().toLocaleTimeString()+"说："+liuyan+"."
+				mesgs.unshift(str);
+				if(mesgs.length>10){
+					mesgs.pop();
+				}
+				document.getElementById("msgs").value=mesgs.join("\n");
+				
 			}
 		</script>
 	</head>
