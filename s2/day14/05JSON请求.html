@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		请选择：<select></select>学院<select></select>专业
+		<script>
+			//1.初始化和新对象
+			var xhr = new XMLHttpRequest();
+			//2. 创建请求
+			xhr.open("GET","data.json",false);
+			//3. 发送请求
+			xhr.send();
+			//4. 接收数据并更新页面
+			var data = xhr.responseText;
+			//表示所有的学院（数组）
+			var schools = JSON.parse(data);
+			
+			var select1 = document.querySelectorAll("select")[0];
+			var select2 = document.querySelectorAll("select")[1];
+			
+			for (var i = 0; i < schools.length; i++) {
+				//select1.options[i] = new Option(schools[i].name);
+				select1.options[i] = new Option(schools[i]["name"]);
+			}
+			//设置默认值，第0个学院的专业
+			for (var i = 0; i < schools[0].major.length; i++) {
+				select2.options[i] = new Option(schools[0].major[i]);
+			}
+			
+			select1.addEventListener("change",function(){
+				var index = select1.selectedIndex;
+				//清空专业的数组
+				select2.length = 0;
+				for (var i = 0; i < schools[index].major.length; i++) {
+					select2.options[i] = new Option(schools[index].major[i]);
+				}
+			},true);
+			
+		</script>
+	</body>
+</html>

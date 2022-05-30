@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			function fun(){
+				var s = document.querySelector("button").innerHTML;
+				console.log(s);
+			}
+			$(function(){
+				console.log($("button").html("按钮"));
+				console.log("jquery")
+			});
+		</script>
+	</head>
+	<body onload="fun()">
+		<script type="text/javascript">
+			document.write("1");
+			$(document).get(0).write("2");
+			
+			
+		</script>
+		<button>文字</button>
+		<!-- <img src="http://www.abc.com/abc.jpg" /> -->
+	</body>
+</html>

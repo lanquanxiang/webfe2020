@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body onload="fun()">
+		请选择网页背景色:<select></select>
+		<script type="text/javascript">
+			var fun = function(){
+				//1. 初始化核心对象
+				var xhr = new XMLHttpRequest();
+				//2. 创建请求
+				xhr.open("GET","color1.xml",false);
+				//3. 发送请求
+				xhr.send();
+				//4. 接收数据并处理
+				var xmldata = xhr.responseXML;
+				var colors = xmldata.getElementsByTagName("color");
+				var select = document.querySelector("select");
+				for (var i = 0; i < colors.length; i++) {
+					select.options[i] = new Option(colors[i].getAttribute("name"));
+				}
+				
+				select.onchange = function(){
+					var index = select.selectedIndex;
+					var color = colors[index].getAttribute("value");
+					document.body.setAttribute("style","background-color: "+color+";")
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				border: #000000 1px solid;
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				float: left;
+			}
+		</style>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("div").mouseover(function(){
+					var index = $("div").index(this);
+					$("div").eq(index).css("background-color","red");
+					$("div:lt("+index+")").css("background-color","yellow");
+					$("div:gt("+index+")").css("background-color","gray");
+				}).mouseout(function(){
+					$("div").css("background-color","#FFF");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>

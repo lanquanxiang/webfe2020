@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.hide{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<button>显示</button>
+		<button>隐藏</button>
+		<div id="txt">
+			文字
+		</div>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("button").eq(1).click(function(){
+				$("#txt").addClass("hide");
+			})
+			$("button").eq(0).click(function(){
+				$("#txt").removeClass("hide");
+			})
+		</script>
+	</body>
+</html>

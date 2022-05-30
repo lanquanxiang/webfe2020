@@ -1,0 +1,22 @@
+<colors>
+	<color>
+		<name>白色</name>
+		<code>#FFFFFF</code>
+	</color>
+	<color>
+		<name>蓝色</name>
+		<code>#0000FF</code>
+	</color>
+	<color>
+		<name>红色</name>
+		<code>#FF0000</code>
+	</color>
+	<color>
+		<name>黄色</name>
+		<code>#FFFF00</code>
+	</color>
+	<color>
+		<name>绿色</name>
+		<code>#00FF00</code>
+	</color>	
+</colors>

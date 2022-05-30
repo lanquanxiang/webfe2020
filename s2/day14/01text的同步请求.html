@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		请求到的数据是：<span></span><br />
+		<button onclick="fun()">请求</button>
+		<script type="text/javascript">
+			function fun(){
+				//1.初始化和新对象
+				var xhr = new XMLHttpRequest();
+				//2. 创建请求
+				xhr.open("GET","data.txt",false);
+				//3. 发送请求
+				xhr.send();
+				//4. 接收数据并更新页面
+				var data = xhr.responseText;
+				document.querySelector("span").innerHTML = data;
+			}
+		</script>
+	</body>
+</html>

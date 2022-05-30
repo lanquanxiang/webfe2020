@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		上传文件:
+		<div>
+			<input type="file" />
+			<button type="button" id="add">增加</button>
+			<div class="con"></div>
+		</div>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#add").click(function(){
+				$div = $("<div></div");
+				$file = $("<input type='file'/>");
+				$del = $("<button onclick='fun()'>删除</button>")
+				$div.append($file);
+				$div.append($del);
+				$(".con").append($div);
+				
+			})
+			function fun(){
+				$(event.target.parentNode).remove();
+			}
+		</script>
+	</body>
+</html>

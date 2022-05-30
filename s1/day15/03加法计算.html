@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			input{
+				width: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" />+
+		<input type="text" />=
+		<input type="text" />
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("input").eq(1).change(function(){
+				var n1 = $("input").eq(0).val();
+				var n2 = $("input").get(1).value;
+				$("input").eq(2).val(eval(n1+"+"+n2));
+			});
+		</script>
+	</body>
+</html>

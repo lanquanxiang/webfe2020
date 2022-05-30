@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body onload="load()">
+		请选择学院:<select></select>
+		专业:<select></select>
+		<script type="text/javascript">
+			var objs = [];
+			function load(){
+				var xhr = new XMLHttpRequest();
+				xhr.open("get","data.json",false);
+				xhr.send();
+				var data = xhr.responseText;
+				//将文本数据转换为JS对象
+				//objs = JSON.parse(data);
+				//计算表达式的值进行转化
+				objs = eval("("+data+")");
+				var select1 = document.querySelectorAll("select")[0];
+				var select2 = document.querySelectorAll("select")[1];
+				for (var i = 0; i < objs.length; i++) {
+					select1.options[i] = new Option(objs[i].name);
+				}
+				
+				for (var i = 0; i <objs[0].major.length; i++) {
+					select2.options[i] = new Option(objs[0].major[i]);
+				}
+				
+				select1.addEventListener("change",function(){
+					var index  = select1.selectedIndex;
+					select2.length = 0;
+					for (var i = 0; i <objs[index].major.length; i++) {
+						select2.options[i] = new Option(objs[index].major[i]);
+					}
+				},true);
+			}
+		</script>
+	</body>
+</html>

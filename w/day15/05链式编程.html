@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		文本框:<input type="text" />
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(":text").click(function(){
+				console.log("你点击了文本框")
+			}).focus(function(){
+				console.log("文本框获得了焦点")
+			}).mouseout(function(){
+				console.log("你离开了文本框")
+			}).mouseover(function(){
+				console.log("你进入了文本框")
+			}).change(function(){
+				console.log("文本框值被改变失去焦点")
+			}).blur(function(){
+				console.log("文本框失去了焦点")
+			})
+		</script>
+	</body>
+</html>

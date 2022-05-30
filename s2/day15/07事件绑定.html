@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function(){
+			$("button").eq(0).bind("click",function(){
+				console.log(' 按钮1')
+			})	
+				$("button").eq(1).one("click",function(){
+					console.log('解除按钮1的绑定');
+					$("button").eq(0).unbind("click");
+					console.log("按钮2事件失效");
+				})	
+			})
+		</script>
+	</head>
+	<body>
+		<button type="button">按钮1</button>
+		<button type="button">按钮2</button>
+	</body>
+</html>

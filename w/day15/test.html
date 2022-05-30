@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button>显示</button>
+		<button>隐藏</button>
+		<div style="width: 100px;height: 100px;background-color: red;">
+			
+		</div>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("button").eq(1).click(function(){
+				$("div").hide(1000,function(){
+					$("button").eq(0).click();
+				});
+			})
+			$("button").eq(0).click(function(){
+				$("div").show(1000,function(){
+					$("button").eq(1).click();
+				});
+			})
+		</script>
+	</body>
+</html>

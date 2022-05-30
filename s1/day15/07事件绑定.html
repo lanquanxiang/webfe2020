@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button>绑定事件</button>
+		<button>一次性移除</button>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("button").eq(0).bind("click",function(){
+				console.log("你点击了按钮");
+			})
+			
+			$("button").eq(1).one("click",function(){
+				console.log("你点击了一次性按钮");
+				$("button").eq(0).unbind("click");
+			})
+			
+		</script>
+	</body>
+</html>

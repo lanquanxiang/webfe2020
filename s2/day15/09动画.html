@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<button>show</button>
+		<div style="display:none ;width: 100px;height: 100px;background-color: aqua;"></div>
+		<script type="text/javascript">
+			$("button").eq(0).bind("click",function(){
+				$("div").toggle(5000,function(){
+					//动画结束之后执行
+					console.log("a1111")
+				});
+			})
+		</script>
+	</body>
+</html>
