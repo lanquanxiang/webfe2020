@@ -44,3 +44,8 @@
 	3. document.querySelector("button").addEventListener("click",fun,true);
 	4. $("button").click(fun);
 	5. $("button").bind("click",fun);
+## 4. 动画
+1. hide/show
+2. fadeIn/fadeOut
+3. sildeDown/sildeUp
+4. animate
