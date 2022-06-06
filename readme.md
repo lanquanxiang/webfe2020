@@ -6,9 +6,9 @@
 2. Chrome
 ### 使用说明
 1. 每个学时为一个day，本课程共计40学时(36学时讲解+4学时自学)
-2. 案例教程：[案例教程](https://www.kancloud.cn/pzhlan/webfontcase/2651296)
-3. 超星课程：[超星课程](https://mooc1.chaoxing.com/course/222729413.html)
-4. 实验课程：[实验课程](https://mooc1.chaoxing.com/course/221774475.html)
+2. 案例教程：[案例教程http://docs.pzhuweb.cn](http://docs.pzhuweb.cn)
+3. 超星课程：[超星课程https://mooc1.chaoxing.com/course/222729413.html](https://mooc1.chaoxing.com/course/222729413.html)
+4. 实验课程：[实验课程https://mooc1.chaoxing.com/course/221774475.html](https://mooc1.chaoxing.com/course/221774475.html)
 ### 考试说明
 1. 判断题 10*1分=10分
 2. 选择题 10*2分=20分
